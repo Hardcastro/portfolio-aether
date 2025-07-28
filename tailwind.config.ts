@@ -61,7 +61,29 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Basquiat palette
+				neo: {
+					orange: 'hsl(var(--neo-orange))',
+					cyan: 'hsl(var(--pop-cyan))',
+					blue: 'hsl(var(--electric-blue))',
+					green: 'hsl(var(--street-green))',
+					purple: 'hsl(var(--graffiti-purple))',
+					yellow: 'hsl(var(--urban-yellow))'
 				}
+			},
+			backgroundImage: {
+				'gradient-basquiat': 'var(--gradient-basquiat)',
+				'gradient-neo': 'var(--gradient-neo)',
+				'gradient-pop': 'var(--gradient-pop)'
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'street': 'var(--shadow-street)'
+			},
+			fontFamily: {
+				'graffiti': 'var(--font-graffiti)',
+				'street': 'var(--font-street)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
