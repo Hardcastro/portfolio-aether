@@ -62,28 +62,36 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Basquiat palette
-				neo: {
-					orange: 'hsl(var(--neo-orange))',
-					cyan: 'hsl(var(--pop-cyan))',
-					blue: 'hsl(var(--electric-blue))',
-					green: 'hsl(var(--street-green))',
-					purple: 'hsl(var(--graffiti-purple))',
-					yellow: 'hsl(var(--urban-yellow))'
+				// Tech neon palette
+				neon: {
+					green: 'hsl(var(--neon-green))',
+					blue: 'hsl(var(--neon-blue))',
+					purple: 'hsl(var(--neon-purple))',
+					pink: 'hsl(var(--neon-pink))',
+					cyan: 'hsl(var(--neon-cyan))'
+				},
+				// Basquiat accent colors (subtle)
+				basquiat: {
+					yellow: 'hsl(var(--basquiat-yellow))',
+					red: 'hsl(var(--basquiat-red))',
+					orange: 'hsl(var(--basquiat-orange))'
 				}
 			},
 			backgroundImage: {
-				'gradient-basquiat': 'var(--gradient-basquiat)',
-				'gradient-neo': 'var(--gradient-neo)',
-				'gradient-pop': 'var(--gradient-pop)'
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-hero': 'var(--gradient-hero)'
 			},
 			boxShadow: {
 				'neon': 'var(--shadow-neon)',
-				'street': 'var(--shadow-street)'
+				'glow': 'var(--shadow-glow)',
+				'card': 'var(--shadow-card)',
+				'border-glow': 'var(--border-glow)'
 			},
 			fontFamily: {
-				'graffiti': 'var(--font-graffiti)',
-				'street': 'var(--font-street)'
+				'tech': 'var(--font-tech)',
+				'mono': 'var(--font-mono)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -106,11 +114,21 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+					'50%': { transform: 'translateY(-20px) rotate(180deg)' }
+				},
+				'pulse-neon': {
+					'0%, 100%': { boxShadow: '0 0 5px hsl(var(--neon-green) / 0.5)' },
+					'50%': { boxShadow: '0 0 30px hsl(var(--neon-green) / 0.8), 0 0 50px hsl(var(--neon-green) / 0.5)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-neon': 'pulse-neon 3s ease-in-out infinite'
 			}
 		}
 	},
