@@ -244,7 +244,7 @@ const AdvancedContactForm: React.FC = () => {
         <CardHeader>
           <CardTitle className="text-data-blue headline flex items-center gap-2">
             <Mail className="h-6 w-6" />
-            Formulário de Contato Avançado
+            Entre em Contato
           </CardTitle>
         </CardHeader>
         <CardContent>
