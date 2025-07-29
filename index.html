@@ -61,29 +61,6 @@
 
   <body>
     <div id="root"></div>
-    <script>
-      // Script para redirecionar para a aplicação principal
-      // Isso é necessário para o GitHub Pages funcionar com React Router
-      (function() {
-        var redirect = sessionStorage.redirect;
-        delete sessionStorage.redirect;
-        if (redirect && redirect != location.href) {
-          history.replaceState(null, null, redirect);
-        }
-      })();
-      
-      // Redirecionamento para rotas SPA
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
-        }
-      }(window.location))
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
