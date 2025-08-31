@@ -1,137 +1,116 @@
-# Portfolio Oficial AEther
+# 🚀 Portfolio AEther - Analista de Inteligência de Negócios
 
-<div align="center">
-  <img src="public/favicon.svg" alt="AEther Logo" width="64" height="64">
-  <h1>AEther | Analista de Inteligência de Negócios</h1>
-  <p>Portfolio profissional especializado em Business Intelligence, Geoanálise e Comunicação Estratégica com dados</p>
-  
-  [![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com)
-  [![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.3-blue?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-</div>
+Um portfolio profissional moderno e responsivo desenvolvido com tecnologias web atuais, focado em apresentar habilidades em Business Intelligence, geoanálise e comunicação estratégica com dados.
 
----
+## ✨ Sobre o Projeto
 
-## 🎯 Sobre
+Este portfolio foi criado para demonstrar competências técnicas e profissionais na área de análise de dados, apresentando projetos, habilidades e experiências de forma elegante e interativa.
 
-Portfolio profissional do **AEther**, analista de dados especializado em transformar dados complexos em insights acionáveis. Foco em Business Intelligence, geoanálise e comunicação estratégica com dados.
-
-### 🚀 Características
-
-- **Design Moderno**: Interface elegante e responsiva
-- **Performance Otimizada**: Lazy loading e otimizações de SEO
-- **Filtros Avançados**: Sistema de filtros por tecnologias
-- **Formulário Inteligente**: Validação em tempo real e upload de arquivos
-- **Animações Suaves**: Transições e micro-interações
-- **SEO Otimizado**: Meta tags, sitemap e estrutura semântica
-
-## 🛠️ Tecnologias
+## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
-- **React 18** - Biblioteca JavaScript para interfaces
-- **TypeScript** - Tipagem estática
-- **Vite** - Build tool e dev server
-- **Tailwind CSS** - Framework CSS utilitário
-- **shadcn/ui** - Componentes UI modernos
+- **React 18** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Linguagem com tipagem estática para maior confiabilidade
+- **Vite** - Ferramenta de build rápida e eficiente
+- **Tailwind CSS** - Framework CSS utilitário para design responsivo
 
-### Ferramentas
-- **Lucide React** - Ícones
-- **Sonner** - Notificações toast
-- **React Router** - Navegação
-- **Framer Motion** - Animações
+### Componentes e Bibliotecas
+- **shadcn/ui** - Sistema de componentes modernos e acessíveis
+- **Radix UI** - Componentes primitivos semânticos
+- **Lucide React** - Ícones vetoriais elegantes
+- **Framer Motion** - Animações e transições suaves
+
+### Ferramentas de Desenvolvimento
+- **ESLint** - Linter para qualidade de código
+- **PostCSS** - Processador CSS avançado
+- **SWC** - Compilador JavaScript rápido
+
+## 🚀 Como Executar Localmente
+
+### Pré-requisitos
+- **Node.js** versão 18 ou superior
+- **npm** ou **yarn** como gerenciador de pacotes
+
+### Passo a Passo
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/Hardcastro/portfolio-aether.git
+   cd portfolio-aether
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Execute em modo desenvolvimento**
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+4. **Acesse a aplicação**
+   - Abra seu navegador
+   - Acesse: `http://localhost:8080`
+
+### Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run preview` - Visualiza o build de produção
+- `npm run lint` - Executa verificação de código
+
+## 🤝 Como Contribuir
+
+Contribuições são sempre bem-vindas! Aqui estão algumas formas de contribuir:
+
+### 🐛 Reportar Bugs
+- Abra uma [Issue](../../issues) descrevendo o problema
+- Inclua passos para reproduzir o bug
+- Adicione screenshots se relevante
+
+### 💡 Sugerir Melhorias
+- Crie uma [Issue](../../issues) com sua sugestão
+- Descreva a funcionalidade desejada
+- Explique por que seria útil
+
+### 🔧 Contribuir com Código
+1. Faça um [Fork](../../fork) do projeto
+2. Crie uma branch para sua feature: `git checkout -b feature/nova-funcionalidade`
+3. Faça suas alterações e commit: `git commit -m 'feat: adiciona nova funcionalidade'`
+4. Push para a branch: `git push origin feature/nova-funcionalidade`
+5. Abra um [Pull Request](../../pulls)
+
+### 📝 Padrões de Commit
+Siga o padrão [Conventional Commits](https://www.conventionalcommits.org/):
+- `feat:` para novas funcionalidades
+- `fix:` para correções de bugs
+- `docs:` para documentação
+- `style:` para formatação de código
+- `refactor:` para refatorações
+- `test:` para testes
 
 ## 📁 Estrutura do Projeto
 
 ```
-src/
-├── components/          # Componentes React
-│   ├── ui/             # Componentes base (shadcn/ui)
-│   ├── PortfolioTabs.tsx
-│   ├── ProjectFilters.tsx
-│   ├── AdvancedContactForm.tsx
-│   └── ...
-├── hooks/              # Custom hooks
-├── pages/              # Páginas da aplicação
-├── assets/             # Imagens e recursos
-└── lib/                # Utilitários
+portfolio-aether/
+├── src/                    # Código fonte
+│   ├── components/         # Componentes React reutilizáveis
+│   ├── pages/             # Páginas da aplicação
+│   ├── hooks/             # Custom hooks
+│   ├── lib/               # Utilitários e configurações
+│   ├── types/             # Definições de tipos TypeScript
+│   └── assets/            # Recursos estáticos
+├── public/                 # Arquivos públicos
+├── package.json            # Dependências e scripts
+├── vite.config.ts          # Configuração do Vite
+├── tailwind.config.ts      # Configuração do Tailwind CSS
+└── README.md               # Este arquivo
 ```
-
-## 🚀 Como Executar
-
-### Pré-requisitos
-- Node.js 18+ 
-- npm ou yarn
-
-### Instalação
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/portfolio-aether.git
-cd portfolio-aether
-
-# Instale as dependências
-npm install
-
-# Execute em modo desenvolvimento
-npm run dev
-
-# Build para produção
-npm run build
-
-# Preview da build
-npm run preview
-```
-
-## 📱 Funcionalidades
-
-### 🏠 Página Inicial
-- Apresentação profissional
-- Estatísticas de experiência
-- Call-to-action para contato
-
-### 👤 Sobre
-- Perfil profissional
-- Experiência de trabalho
-- Áreas de especialização
-
-### 📊 Projetos
-- Portfolio de projetos
-- Filtros por tecnologias
-- Links para GitHub e Medium
-- Resumos detalhados
-
-### 🛠️ Habilidades
-- Categorização por áreas
-- Certificações
-- Idiomas
-
-### 📧 Contato
-- Formulário avançado
-- Validação em tempo real
-- Upload de arquivos
-- Agendamento de reunião
-
-## 🎨 Design System
-
-### Cores
-- **Data Blue**: #00BFFF
-- **Data Cyan**: #008080  
-- **Data Purple**: #4B0082
-- **Data Green**: #00FF7F
-
-### Tipografia
-- **Headlines**: Plus Jakarta Sans
-- **Body**: IBM Plex Sans
-- **Code**: JetBrains Mono
-
-## 📈 SEO e Performance
-
-- ✅ Meta tags otimizadas
-- ✅ Sitemap XML
-- ✅ Lazy loading de imagens
-- ✅ Preload de recursos críticos
-- ✅ Core Web Vitals otimizados
-- ✅ Open Graph e Twitter Cards
 
 ## 🌐 Deploy
 
@@ -143,17 +122,16 @@ O projeto está configurado para deploy em:
 
 ## 📄 Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a [Licença MIT](LICENSE) - veja o arquivo LICENSE para detalhes.
 
-## 🤝 Contato
+## 📞 Contato
 
-- **Email**: contato@aetherdata.com
-- **LinkedIn**: [Gabriel Barreto](https://www.linkedin.com/in/gabriel-barreto-a84650179/)
-- **GitHub**: [Hardcastro](https://github.com/Hardcastro)
+- **Desenvolvedor**: Gabriel Barreto (AEther)
+- **GitHub**: [@Hardcastro](https://github.com/Hardcastro)
+- **Portfolio**: [portfolio-aether.vercel.app](https://portfolio-aether.vercel.app)
 
 ---
 
-<div align="center">
-  <p>Desenvolvido com ❤️ por <strong>AEther</strong></p>
-  <p>Transformando dados em insights acionáveis</p>
-</div>
+⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
+
+**Desenvolvido com ❤️ por AEther**
